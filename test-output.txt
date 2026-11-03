@@ -1,0 +1,289 @@
+﻿> Task :clean
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :processResources NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :compileKotlin
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :compileTestKotlin
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+AstPrinterTest > testNil() PASSED
+
+AstPrinterTest > testBinaryPrecedence() PASSED
+
+AstPrinterTest > testNestedExpression() PASSED
+
+AstPrinterTest > testLiteral() PASSED
+
+AstPrinterTest > testGrouping() PASSED
+
+ClassTest > testInstanceFields() PASSED
+
+ClassTest > testUndefinedProperty() STANDARD_ERROR
+    Undefined property 'size'.
+    [line 4]
+
+ClassTest > testUndefinedProperty() PASSED
+
+ClassTest > testBasicClassInstantiation() PASSED
+
+ClassTest > testClassFieldsIndependent() PASSED
+
+ClassTest > testThisOutsideClass() STANDARD_ERROR
+    [line 1] Error at 'this': Can't use 'this' outside of a class.
+
+ClassTest > testThisOutsideClass() PASSED
+
+ClassTest > testMethods() PASSED
+
+ClassTest > testInitializer() PASSED
+
+ClassTest > testInitializerArity() STANDARD_ERROR
+    Expected 1 arguments but got 0.
+    [line 7]
+
+ClassTest > testInitializerArity() PASSED
+
+ClassTest > testThisKeyword() PASSED
+
+ClassTest > testBoundMethods() PASSED
+
+ClassTest > testFieldShadowsMethod() PASSED
+
+ClassTest > testReturnFromInitializer() STANDARD_ERROR
+    [line 3] Error at 'return': Can't return a value from an initializer.
+
+ClassTest > testReturnFromInitializer() PASSED
+
+ControlFlowTest > testDanglingElse() PASSED
+
+ControlFlowTest > testWhileLoop() PASSED
+
+ControlFlowTest > testForLoop() PASSED
+
+ControlFlowTest > testShortCircuit() PASSED
+
+ControlFlowTest > testForWithoutInitializer() PASSED
+
+ControlFlowTest > testLogicalValues() PASSED
+
+ControlFlowTest > testLogicalAndShortCircuit() PASSED
+
+ControlFlowTest > testIfFalse() PASSED
+
+ControlFlowTest > testIfElse() PASSED
+
+ControlFlowTest > testIfTrue() PASSED
+
+ControlFlowTest > testForLoopScope() STANDARD_ERROR
+    Undefined variable 'i'.
+    [line 4]
+
+ControlFlowTest > testForLoopScope() PASSED
+
+FunctionTest > testFunctionParameters() PASSED
+
+FunctionTest > testRecursiveFunction() PASSED
+
+FunctionTest > testEarlyReturn() PASSED
+
+FunctionTest > testNonCallableValue() STANDARD_ERROR
+    can only call functions and classes.
+    [line 2]
+
+FunctionTest > testNonCallableValue() PASSED
+
+FunctionTest > testBasicFunctionCall() PASSED
+
+FunctionTest > testClosure() PASSED
+
+FunctionTest > testIncorrectArity() STANDARD_ERROR
+    Expected 1 arguments but got 2.
+    [line 5]
+
+FunctionTest > testIncorrectArity() PASSED
+
+FunctionTest > testImplicitNilReturn() PASSED
+
+FunctionTest > testFunctionReturn() PASSED
+
+InheritanceTest > testInheritedMethod() PASSED
+
+InheritanceTest > testSuper() PASSED
+
+InheritanceTest > testSuperPreservesThis() PASSED
+
+InheritanceTest > testMethodOverride() PASSED
+
+InheritanceTest > testSelfInheritance() STANDARD_ERROR
+    [line 1] Error at 'Animal': A class can't inherit from itself.
+
+InheritanceTest > testSelfInheritance() PASSED
+
+InheritanceTest > testSuperWithoutSuperclass() STANDARD_ERROR
+    [line 3] Error at 'super': Can't use 'super' in a class with no superclass.
+
+InheritanceTest > testSuperWithoutSuperclass() PASSED
+
+InheritanceTest > testSuperOutsideClass() STANDARD_ERROR
+    [line 1] Error at 'super': Can't use 'super' outside of a class
+
+InheritanceTest > testSuperOutsideClass() PASSED
+
+InheritanceTest > testInheritedInitializer() PASSED
+
+InheritanceTest > testUndefinedSuperMethod() STANDARD_ERROR
+    Undefined property 'fly'.
+    [line 9]
+
+InheritanceTest > testUndefinedSuperMethod() PASSED
+
+InheritanceTest > testInvalidSuperClass() STANDARD_ERROR
+    Superclass must be a class.
+    [line 3]
+
+InheritanceTest > testInvalidSuperClass() PASSED
+
+InterpreterTest > testEvaluateExpression() PASSED
+
+InterpreterTest > testTruthiness() PASSED
+
+InterpreterTest > testRuntimeErrorReporting() STANDARD_ERROR
+    Operands must be numbers.
+    [line 1]
+
+InterpreterTest > testRuntimeErrorReporting() PASSED
+
+InterpreterTest > testInvalidSubtraction() PASSED
+
+InterpreterTest > testStringConcatenation() PASSED
+
+InterpreterTest > testGrouping() PASSED
+
+InterpreterTest > testEquality() PASSED
+
+InterpreterTest > testInvalidAddition() PASSED
+
+ParserTest > testEmptyInput() PASSED
+
+ParserTest > testMissingClosingParen() STANDARD_ERROR
+    [line 1] Error at ';': Expected ')' after expression
+
+ParserTest > testMissingClosingParen() PASSED
+
+ParserTest > testUnary() PASSED
+
+ParserTest > testSyntaxErrors() STANDARD_ERROR
+    [line 1] Error at '*': Expect expression.
+
+ParserTest > testSyntaxErrors() PASSED
+
+ParserTest > testOperatorPrecedence() PASSED
+
+ParserTest > testErrorRecovery() STANDARD_ERROR
+    [line 1] Error at ';': Expect expression.
+
+ParserTest > testErrorRecovery() PASSED
+
+ParserTest > testLeftAssociativity() PASSED
+
+ParserTest > testEqualityAssociativity() PASSED
+
+ResolverTest > testNestedAssignment() PASSED
+
+ResolverTest > testReturnOutsideFunction() STANDARD_ERROR
+    [line 1] Error at 'return': Can't return from top-level code.
+
+ResolverTest > testReturnOutsideFunction() PASSED
+
+ResolverTest > testNestedScopeLookup() PASSED
+
+ResolverTest > testSelfInitialization() STANDARD_ERROR
+    [line 1] Error at 'x': Can't read local variable in its own initializer.
+
+ResolverTest > testSelfInitialization() PASSED
+
+ResolverTest > testShadowedAssignment() PASSED
+
+ResolverTest > testGlobalLookup() PASSED
+
+ResolverTest > testClosureCapture() PASSED
+
+ResolverTest > testLexicalScoping() PASSED
+
+ResolverTest > testDuplicateLocalVariable() STANDARD_ERROR
+    [line 1] Error at 'x': Already a variable with this name in this scope.
+
+ResolverTest > testDuplicateLocalVariable() PASSED
+
+ScannerTest > testOperators() PASSED
+
+ScannerTest > testMultilineString() PASSED
+
+ScannerTest > testEmptyInput() PASSED
+
+ScannerTest > testSingleQuoteUnterminated() STANDARD_ERROR
+    [line 1] Error: Unterminated string.
+
+ScannerTest > testSingleQuoteUnterminated() PASSED
+
+ScannerTest > testKeyword() PASSED
+
+ScannerTest > testUnterminatedString() STANDARD_ERROR
+    [line 1] Error: Unterminated string.
+
+ScannerTest > testUnterminatedString() PASSED
+
+ScannerTest > testTrailingDecimal() PASSED
+
+ScannerTest > testComment() PASSED
+
+ScannerTest > testInvalidCharacters() STANDARD_ERROR
+    [line 1] Error: Unexpected character.
+    [line 1] Error: Unexpected character.
+
+ScannerTest > testInvalidCharacters() PASSED
+
+ScannerTest > testCompleteProgram() PASSED
+
+ScannerTest > testMaximalMunch() PASSED
+
+ScannerTest > testNumber() PASSED
+
+ScannerTest > testCommentAtEOF() PASSED
+
+ScannerTest > testValidString() PASSED
+
+ScannerTest > testIdentifier() PASSED
+
+StatementTest > testUninitializedVariable() PASSED
+
+StatementTest > testAssignmentExpression() PASSED
+
+StatementTest > testUndefinedVariable() STANDARD_ERROR
+    Undefined variable 'missing'.
+    [line 1]
+
+StatementTest > testUndefinedVariable() PASSED
+
+StatementTest > testEnclosingAssignment() PASSED
+
+StatementTest > testBlockShadowing() PASSED
+
+StatementTest > testExpressionStatement() PASSED
+
+StatementTest > testInvalidAssignmentTarget() STANDARD_ERROR
+    [line 1] Error at '=': Invalid assignment target.
+
+StatementTest > testInvalidAssignmentTarget() PASSED
+
+StatementTest > testVariableDeclaration() PASSED
+
+BUILD SUCCESSFUL in 11s
+5 actionable tasks: 5 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html

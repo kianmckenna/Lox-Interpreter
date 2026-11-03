@@ -1,0 +1,18 @@
+class Animal {
+    showName() {
+        print this.name;
+    }
+}
+
+class Dog < Animal {
+    init(name) {
+        this.name = name;
+    }
+
+    showName() {
+        super.showName();
+    }
+}
+
+var dog = Dog("Buddy");
+dog.showName();
